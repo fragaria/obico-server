@@ -43,6 +43,8 @@ services:
   ml_api:
     hostname: ml_api
     restart: unless-stopped
+    ports:
+      - "3333:3333"
     build:
       context: ml_api
     environment:
